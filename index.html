@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sistema de Gerencimento de Mesas e Cadeiras</h1>
+    <main>
+        <div class="reservada">
+            <h2>Mesa 1</h2>
+            <p>Estado: <span>Reservada</span></p>           
+            <p>Cadeiras: 2</p>
+            <p>Localização: Piso 1</p>
+            <button type="button" onclick="estado(this)">Mudar Estado</button>
+        </div>
+        <div class="ocupada">
+            <h2>Mesa 2</h2>
+            <p>Estado: <span>Em uso</span></p>
+            <p>Cadeiras: 6</p>
+            <p>Localização: Piso 1</p>
+            <button type="button" onclick="estado(this)">Mudar Estado</button>
+        </div>
+        
+        <div class="disponivel">
+            <h2>Mesa 3</h2>
+            <p>Estado: <span>Disponivel</span></p>
+            <p>Cadeiras: 4</p>
+            <p>Localização: Piso 1</p>
+            <button type="button" onclick="estado(this)">Mudar Estado</button>
+        </div>
+        
+        <div class="disponivel">
+            <h2>Mesa 4</h2>
+            <p>Estado: <span>Disponivel</span></p>
+            <p>Cadeiras: 4</p>
+            <p>Localização: Piso 2</p>
+            <button type="button" onclick="estado(this)">Mudar Estado</button>
+        </div>
+        
+        <div class="disponivel">
+            <h2>Mesa 5</h2>
+            <p>Estado: <span>Disponivel</span></p>
+            <p>Cadeiras: 2</p>
+            <p>Localização: Piso 2</p>
+            <button type="button" onclick="estado(this)">Mudar Estado</button>
+        </div>
+        
+        <div  class="ocupada">
+            <h2>Mesa 6</h2>
+            <p>Estado: <span>Em uso</span></p>
+            <p>Cadeiras: 4</p>
+            <p>Localização: Piso 2</p>
+            <button type="button" onclick="estado(this)">Mudar Estado</button>
+        </div>
+    </main>
+
+    <div id="box">
+        <ul class="lista-principal lista-verde">
+            <li>Disponível</li>
+        </ul>
+        <ul class="lista-principal lista-azul">
+            <li>Reservada</li>
+        </ul>
+        <ul class="lista-principal lista-vermelho">
+            <li>Em uso</li>
+        </ul>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
